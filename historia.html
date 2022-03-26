@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
     <title>Historia</title>
 </head>
 <body>
     <nav>
         <a href="./index.html">logo</a>
-        <ul>
-            <li><a href="./historia.html">HISTORIA</a></li>
-            <li><a href="./juguemos.html">JUGUEMOS</a></li>
+        <ul class="navMenu">
+            <li class="navMenuItem"><a href="./historia.html" class="navLink">HISTORIA</a></li>
+            <li class="navMenuItem"><a href="./juguemos.html" class="navLink">JUGUEMOS</a></li>
         </ul>
     </nav>
     <header>
-        <h1 class="titulos" id="tituloPrincipal">HISOTORIA DE LA PROGRAMACION</h1>
+        <h1 id="tituloPrincipal">HISTORIA DE LA PROGRAMACION"</h1>
     </header>
-    <main>
+    <main class="mainHistoria">
         <div class="contenedorHistoria">
-            <h2 class="tituloHistoria">El principio de la historia de la programacion</h2>
-            <p>
+            <h2 class="titulos tituloHistoria">El principio de la historia de la programacion</h2>
+            <p class="textoHistoria">
                 El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.
             </p>
         </div>
         <div class="contenedorHistoria">
             
-            <p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+            <p class="textoHistoria">Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
                 Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p>
-                <h2 class="tituloHistoria">Lengua de ensamble</h2>
+                <h2 class="titulos tituloHistoria">Lengua de ensamble</h2>
         </div>
         <div class="contenedorHistoria">
-            <h2 class="tituloHistoria">Los primeros lenguajes de programacion</h2>
+            <h2 class="titulos tituloHistoria">Los primeros lenguajes de programacion</h2>
             <div>
                 <p>
                     FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas.
@@ -58,28 +59,31 @@
             </div>
         </div>
     </main>
-    <article>
-        <h2 class="tituloHistoria">Un breve video para completar lo visto</h2>
-        <section>
-            <video src="">
-                <source src="">
-                <source src="">
+    <article class="articleHhistoria">
+        <h2 class="titulos tituloHistoria">Un breve video para completar lo visto</h2>
+        <section class="sectionHistoria">
+            <video width="100%" poster="./imagenes/img-video.jpg">
+                <source src="./video/historia-Comp.mp4">
+                <source src="./video/historia-Comp.ogv">
             </video>
-            <div>
-                <div>
-                    <button></button>
-                    <button></button>
+            <div class="barra">
+                <div class="botonesVideoCont">
+                    <button class="botonesVideo" ><img src="./imagenes/play.svg" alt="play"></button>
+                    <button class="botonesVideo">
+                        <img src="./imagenes/pausa.svg" alt="pause">
+                    </button>
                 </div>
-                <div>Duracion del video</div>
+                <div id="duracion">Duracion del video</div>
             </div>
         </section>
     </article>
     <footer>
-        <div>
-            <h3 class="titulos" id="tituloFooter">programacion <br> e <br> historia</h2>
+        <div class="contenedorIzq">
+            <a href="./index.html">logo</a>
+            <h3 class="titulos" id="tituloFooter">PROGRAMACION <br> E <br> HITORIA</h2>
         </div>
         <div>
-            <p>sitio creado por M.Victoria Lopez- Trabajo final de D.Santiago Quintero</p>
+            <p>Trabajo final de D.Santiago Quintero Ariza</p>
         </div>
     </footer>
 </body>
