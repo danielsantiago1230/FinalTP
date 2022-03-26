@@ -1,0 +1,30 @@
+body{
+    background-color: #427E80;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navMenu{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.navMenuItem{
+    list-style-type: none;
+}
+.navLink{
+    text-decoration: none;
+
+    box-shadow: 2px 3px #154454;
+    color: #154454;
+    background-color: #F0F5E4;
+   
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px; 
+}
+header{
+    
+}
