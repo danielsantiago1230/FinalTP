@@ -1,3 +1,4 @@
+/*use mucho la herramienta inspeccionar, para mi es mucho más facíl ver y entender e ir acomodando en el caso de la estructura en index por ejemplo me parecia que el h2 de index tenía que ir dentro del main así que lo cambié. realice pequeños detalles así en diferentes partes de la pagina*/
 body{
     background-color: #427E80;
     margin: 0;
@@ -18,6 +19,9 @@ nav{
 .navMenuItem{
     list-style-type: none;
 }
+.navMenuItem:active{
+    transform: translate(4px,3px);
+}
 .navLink{
     text-decoration: none;
 
@@ -28,6 +32,9 @@ nav{
     font-weight: 300;
     border-radius: 10px;
     padding: 10px; 
+}
+.navLink:active{
+    box-shadow: 0px 0px darkgray;
 }
 header{
     background-image: url(./imagenes/codigo.jpeg);
@@ -99,6 +106,10 @@ header{
     text-align: center;
     text-decoration: none;
 }
+.botonCard:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
 footer{
     background-color: #1d1d1d;
     height: 80px;
@@ -169,6 +180,10 @@ footer{
     
     text-decoration: none;
     font-weight: 300;
+}
+.botonesVideo:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
 }
 #pause{
     width: 80px;
