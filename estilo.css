@@ -169,7 +169,12 @@ footer{
     
     text-decoration: none;
     font-weight: 300;
+}
+#pause{
+    width: 80px;
+}
 
+#play{
     width: 80px;
 }
 #duracion{
@@ -185,4 +190,36 @@ footer{
 
 .mainJuguemos{
     padding: 100px 20px;
+}
+.sectionJuego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cajasCont{
+    display: flex;
+    flex-direction: row;
+}
+.cajas{
+    width: 275px;
+    height: 400px;
+    
+    display: inline-block;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+}
+.cajasImgs{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+/*para no repetir uso dos clases con el boton renicio*/
+.botonReiniciar{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    
+
 }
