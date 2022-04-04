@@ -10,20 +10,22 @@ function botonesVideo(){
     botonPause.addEventListener("click",()=>{
         video.pause();
     })
+    
+    video.addEventListener("timeupdate",()=>{
+        /*Uso los parsefloat con el tofixed para pasar el numero de segundos con coma flotante a segundos sin decimal */
+        let segundos=parseFloat(video.currentTime).toFixed(0);
+        let segundosTotales=parseFloat(video.duration).toFixed(0);
+        document.getElementById("duracion").innerHTML = `${secondsToString(segundosTotales)} / ${secondsToString(segundos)}`;	  
+      })
 }
 botonesVideo();
-
-/* Está funcion la saque de https://lineadecodigo.com/html5/tiempo-visualizado-del-video-en-html5/ que explica lo que necesitamos para la duración. Supongo que esto lo veremos más adelante 
-function hora(segundos){
-    
-    var d=new Date(segundos*1000); 
-     Ajuste de las 23 horas
-    var hora = (d.getHours()==0)?23:d.getHours()-1;
-    var hora = (hora<9)?"0"+hora:hora;
-    var minuto = (d.getMinutes()<9)?"0"+d.getMinutes():d.getMinutes();
-    var segundo = (d.getSeconds()<9)?"0"+d.getSeconds():d.getSeconds();
-    return hora+":"+minuto+":"+segundo;	 
-
-   }
-
-    */
+/* está función la encontré en internet */
+function secondsToString(seconds) {
+    var hour = Math.floor(seconds / 3600);
+    hour = (hour < 10)? '0' + hour : hour;
+    var minute = Math.floor((seconds / 60) % 60);
+    minute = (minute < 10)? '0' + minute : minute;
+    var second = seconds % 60;
+    second = (second < 10)? '0' + second : second;
+    return hour + ':' + minute + ':' + second;
+  }
