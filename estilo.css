@@ -36,6 +36,67 @@ nav{
 .navLink:active{
     box-shadow: 0px 0px darkgray;
 }
+/*----Logo. Para este logo use el codigo dispuesto en la pagina, cambie los ids y modifique sus propiedades desde el html y en su css para ver como funcionaba, cambie de lugar para ver si se solapaban o no. Despues lo deje tal cual, una vez que entendí su funcionamiento----*/
+#monitorInferior, #tecladoInferior{
+    animation: part_1 ease-in 4s;
+    /*me parece mucho 5s baje a 4s*/
+    animation-iteration-count:1;
+    }
+    
+#monitorSuperior,#tecladoSuperior {
+    animation: part_2 ease-in 4s;
+    animation-iteration-count:1;
+}
+@keyframes part_1{
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;
+    }
+    20% {
+        transform: translate(0,-10px);
+        opacity:0;
+    }
+    30% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+    90% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+    
+    100% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+}   
+    
+
+@keyframes part_2 {
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;
+    }
+    30% {
+        transform: translate(0,-10px);
+        opacity:0;
+    }
+    40% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+    90% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+
+    100% {
+        transform:translate(0,0);
+        opacity:1;
+    }
+}  
+
+    /*-------------------- Termila el logo---------------------*/ 
 header{
     background-image: url(./imagenes/codigo.jpeg);
     background-attachment: fixed;
@@ -111,12 +172,16 @@ header{
     transform: translate(3px, 2px);
 }
 footer{
+    
     background-color: #1d1d1d;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*para corregir el espacio que se agrebaba abajo cambie el padin orginal a uno de más altura*/
     padding: 0px 40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     color: white;
 }
 .contenedorIzq{
