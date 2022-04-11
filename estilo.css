@@ -289,6 +289,10 @@ footer{
     background-color: grey;
     text-align: center;
 }
+#img1,#img2,#img3{
+    width: 275px;
+    height: 400px;
+}
 .cajasImgs{
     display: flex;
     flex-direction: row;
